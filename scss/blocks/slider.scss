@@ -87,6 +87,63 @@
     .slider__btn {
       @include btn();
     }
+
+    .owl-nav {
+      button.owl-prev button.owl-next {
+        background: url('../img/f') 0 0 no-repeat;
+        width: 49px;
+        height: 49px;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+
+        &:hover {
+          background-position: 0 -49px;
+        }
+      }
+
+      button.owl-next {
+        background-position: -49px 0;
+        left: auto;
+        right: 5px;
+
+
+        &:hover {
+          background-position: -49px -49px;
+        }
+      }
+    }
+
+    .owl-dots {
+      text-align: center;
+      padding: 0 0 15px 0;
+
+      .owl-dot {
+        weight: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $white;
+        box-sizing: border-box;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0 5px;
+        cursos: pointer;
+      }
+
+      .active {
+        color: $black;
+      }
+
+      .active {
+
+      }
+    }
+
   }
 }
 
