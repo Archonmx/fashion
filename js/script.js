@@ -38,4 +38,16 @@ $(document).ready(function () {
             }
         }
     })
+
+    const iconSearch = document.querySelector('.icons__search');
+    const body = document.querySelector('body');
+
+    iconSearch.addEventListener('click', event => {
+        event.stopPropagation();
+        iconSearch.classList.add('icons__search--active');
+    })
+
+    body.addEventListener('click', event => {
+        iconSearch.classList.remove('icons__search--active');
+    })
 })
